@@ -4154,3 +4154,11 @@ input, select, textarea {
 		}
 
 	}
+
+	.contact-img {
+		width: 50%;
+	}
+
+	.logo-img {
+		width: 100%;
+	}
