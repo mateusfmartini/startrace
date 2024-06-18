@@ -4029,7 +4029,7 @@ input, select, textarea {
 			width: 100%;
 		}
 
-		#footer .inner form {
+		#footer .inner .contact-img {
 			margin: 0 3em 0 0;
 			width: calc(50% - 1.5em);
 		}
@@ -4155,10 +4155,6 @@ input, select, textarea {
 
 	}
 
-	.contact-img {
-		width: 50%;
-	}
-
 	.logo-img {
-		width: 100%;
+		width: 80%;
 	}
