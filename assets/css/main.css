@@ -3377,10 +3377,6 @@ input, select, textarea {
 
 /* Banner */
 
-	#banner {
-		padding: 10em 0 4.75em 0 ;
-	}
-
 		#banner .inner {
 			margin: 0 auto;
 			width: 55em;
