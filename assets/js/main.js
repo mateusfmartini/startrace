@@ -140,6 +140,14 @@
 					if (event.keyCode == 27)
 						$menu._hide();
 
-			});
+			})
+			.on('click','a[href="#footer"]', function(event) {
+				event.stopPropagation();
+				event.preventDefault();
+				console.log("footer");
+
+				document.getElementById("footer").scrollIntoView({ behavior: "smooth" });
+			})
+			;
 
 })(jQuery);
