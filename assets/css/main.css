@@ -3640,7 +3640,7 @@ body.is-preload #banner .logo {
 	-webkit-transform: translateY(0.5em);
 	-ms-transform: translateY(0.5em);
 	transform: translateY(0.5em);
-	opacity: 0;
+	opacity: 70%;
 }
 
 body.is-preload #banner h2 {
