@@ -4297,6 +4297,8 @@ body.is-preload #banner p {
 
 .logo-img {
 	width: 80%;
+	display: block;
+	margin: auto;
 }
 
 #canal-youtube {
@@ -4478,6 +4480,8 @@ img.right {
 	display: flex;
 	overflow-x: scroll;
 	scrollbar-width: thin;
+	background-color: white;
+	border-radius: 2rem;
 }
 
 .carousel>img {
@@ -4500,10 +4504,129 @@ img.right {
 
 .gallery-image {
 	width: 100%;
+	padding: 0 6px;
+	margin-bottom: 12px;
+	max-height: 400px;
+	object-fit: cover;
 }
 
 .gallery-flex-column {
 	display: flex;
 	flex-direction: column;
 	flex:1;
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+	object-fit: contain;
+}
+
+
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+.out {
+  animation-name: zoom-out;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(1)}
+    to {-webkit-transform:scale(2)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0.4)}
+    to {transform:scale(1)}
+}
+
+@keyframes zoom-out {
+    from {transform:scale(1)}
+    to {transform:scale(0)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        max-width: 100%;
+		max-height: 100%;
+    }
+
+	.modal {
+		padding-top: 2.75em; /* Location of the box */
+	}
+}
+
+@media only screen and (min-width: 700px){
+    .modal-content {
+        max-width: 70%;
+		max-height: 100%;
+    }
+	.modal {
+		padding-top: 3.5em; /* Location of the box */
+	}
 }
